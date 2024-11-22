@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=LXGW+WenKai+TC&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=LXGW+WenKai+TC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quattrocento:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    text-decoration: none;
+}
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the arrows in Firefox */
+.no-arrows[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5cm;
+}
+
+.introBox {
+    inset: 0;
+    min-height: 100svh;
+    position: relative;
+    padding: 0.2cm 5vw 4cm 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3cm;
+}
+
+.introBox::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: url("./dmb.jpg") no-repeat center;
+    filter: brightness(30%);
+    background-size: cover;
+    z-index: -1;
+}
+
+.Nav {
+    width: 100%;
+    padding: 0.5cm;
+}
+
+.Nav-white {
+    width: auto;
+    padding: 0.5cm 5vw;
+    background-color: #ececec;
+}
+
+.menu {
+    display: flex;
+    gap: 0.3cm;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5cm;
+}
+
+.menu-item {
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid blueviolet;
+}
+
+.logo {
+    color: white;
+    font-family: "LXGW Wenkai TC";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.introDets {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0.5cm 0.7cm 0.8cm 0.7cm;
+    max-width: 18cm;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3cm;
+}
+
+.tagline {
+    font-family: "Freeman";
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    line-height: 1.9cm;
+    text-align: center;
+    letter-spacing: 0.055cm;
+}
+
+.desc {
+    text-align: center;
+    color: #e7e7e7;
+    letter-spacing: 0.015cm;
+    line-height: 0.55cm;
+    font-weight: 500;
+}
+
+.servicesButton {
+    width: fit-content;
+    padding: 0.3cm 0.6cm;
+    margin-top: 0.5cm;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.servicesMain {
+    padding: 0cm 5vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 16px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.ch {
+    color: #ff5661;
+}
+
+.service {
+    width: 8cm;
+    height: auto;
+    background-color: #f7ecff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3cm;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service:hover {
+    box-shadow: 0 0 10px blueviolet;
+}
+
+.serviceBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3cm;
+    align-items: center;
+}
+
+.subHead {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Freeman";
+    font-weight: 800;
+    letter-spacing: 0.03cm;
+    line-height: 1cm;
+}
+
+.services {
+    margin-top: 1cm;
+    display: flex;
+    gap: 0.5cm;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.simg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sname {
+    font-size: 22px;
+    line-height: 0.8cm;
+    margin-top: 0.5cm;
+    text-align: center;
+}
+
+.sdesc {
+    text-align: center;
+    font-size: 15px;
+}
+
+.lmore {
+    padding: 0.3cm 0.5cm;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 0.7cm;
+    cursor: pointer;
+}
+
+.contact {
+    margin-top: 2cm;
+    padding: 0cm 5vw;
+}
+
+.contactBox {
+    margin-top: 1cm;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3cm;
+}
+
+.cimg {
+    width: 1.1cm;
+}
+
+.contactMed {
+    display: flex;
+    align-items: flex-start;
+    width: 7.5cm;
+    gap: 0.3cm;
+    padding: 0.3cm;
+    border-radius: 10px;
+    height: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contactMed:hover {
+    background-color: #ffeff0;
+}
+
+.medDetText {
+    color: #323232;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.medHead {
+    font-size: 16px;
+}
+
+.contactLeft {
+    width: 18cm;
+    padding: 0.3cm;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1cm;
+}
+
+.contactMeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3cm;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    margin-top: 0.3cm;
+    padding: 0.3cm 0cm;
+    border-top: thin solid #ccc;
+    border-bottom: thin solid #ccc;
+}
+
+.head-sub {
+    font-size: 30px;
+}
+
+.contactRight {
+    width: 18cm;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - .2cm);
+    border-radius: 10px;
+    gap: 0.3cm;
+    background-color: #ffeff0;
+    padding: 0.3cm 0.4cm 0.4cm;
+}
+
+.msgSent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #fee4e5;
+    border-radius: 10px;
+    gap: 0.3cm;
+}
+
+.sentText {
+    font-size: 18px;
+}
+
+.closeMsg {
+    width: fit-content;
+    padding: 0.2cm 1cm;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff5661;
+    color: white;
+}
+
+.contactInp {
+    background-color: transparent;
+    padding: 0.3cm;
+    border: 2px solid #fda3a9;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contactInp:focus {
+    outline: none;
+    border: 2px solid #ff5661;
+}
+
+.contactText {
+    padding: 0.3cm;
+    background-color: transparent;
+    padding: 0.3cm;
+    height: 4cm;
+    border: 2px solid #ff979e;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contactText:focus {
+    outline: none;
+    border: 2px solid #ff5661;
+}
+
+.subForm {
+    font-size: 16px;
+    padding: 0.3cm 0.5cm;
+    background-color: #ff5661;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.brightspark {
+    color: white;
+    border: 2px solid blueviolet;
+    border-radius: 1000px;
+    padding: 0.1cm 0.3cm;
+    transition: 0.2s;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 8px blueviolet;
+}
+
+.tl {
+    text-align: left;
+}
+
+.socialsBox {
+    margin-top: 0.2cm;
+}
+
+.socials {
+    display: flex;
+    margin-top: 0.2cm;
+    gap: 0.2cm;
+}
+
+.social {
+    width: 0.8cm;
+    height: auto;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 1000px;
+}
+
+
+
+.social:hover {
+    box-shadow: 0 0 10px #ff5661;
+}
+
+.logo-white {
+    color: black;
+}
+
+.menu-item-white {
+    color: black;
+}
+
+.mb3 {
+    margin-bottom: 0.2cm;
+}
+
+.Footer {
+    margin-top: 3cm;
+    background-color: #626262;
+}
+
+.footer-box {
+    padding: 0.5cm;
+    display: flex;
+    justify-content: center;
+}
+
+.madeby {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.madeby a {
+    color: white;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.madeby a:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .subHead {
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactLeft {
+        width: 17cm;
+    }
+
+    .contactRight {
+        width: 17cm;
+    }
+
+    .head-sub {
+        font-size: 28px;
+    }
+
+    .contactMed {
+        width: 7cm;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .tagline {
+        font-size: 55px;
+        line-height: 1.6cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .introDets {
+        max-width: 16cm;
+    }
+
+    .subHead {
+        font-size: 26px;
+        line-height: 0.9cm;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactLeft {
+        width: 16cm;
+    }
+
+    .contactRight {
+        width: 16cm;
+    }
+
+    .head-sub {
+        font-size: 24px;
+    }
+
+    .contactMed {
+        width: 6cm;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .tagline {
+        font-size: 50px;
+        line-height: 1.5cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .introDets {
+        max-width: 14cm;
+    }
+
+    .subHead {
+        font-size: 24px;
+        line-height: 0.8cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: calc(100% - .7cm);
+    }
+
+    .contactRight {
+        width: calc(100% - .7cm);
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 8cm;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tagline {
+        font-size: 45px;
+        line-height: 1.4cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .dsit {
+        display: none;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 13cm;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 24px;
+        line-height: 0.8cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 7cm;
+    }
+
+    .sname {
+        font-size: 19px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: calc(100% - .7cm);
+    }
+
+    .contactRight {
+        width: calc(100% - .7cm);
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 8cm;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tagline {
+        font-size: 45px;
+        line-height: 1.4cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 12cm;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 22px;
+        line-height: 0.75cm;
+        letter-spacing: 0.02cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 6cm;
+    }
+
+    .sname {
+        font-size: 19px;
+        line-height: 0.73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: calc(100% - .7cm);
+    }
+
+    .contactRight {
+        width: calc(100% - .7cm);
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 7cm;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: 0.9cm;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tagline {
+        font-size: 40px;
+        line-height: 1.2cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 100%;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 22px;
+        line-height: 0.75cm;
+        letter-spacing: 0.02cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .sname {
+        font-size: 20px;
+        line-height: 0.73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: calc(100% - .7cm);
+    }
+
+    .contactRight {
+        width: calc(100% - .7cm);
+    }
+
+    .head-sub {
+        font-size: 20px;
+    }
+
+    .contactMed {
+        width: 6cm;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: 0.9cm;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tagline {
+        font-size: 37px;
+        line-height: 1.2cm;
+        letter-spacing: 0.05cm;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 100%;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 20px;
+        line-height: 0.75cm;
+        letter-spacing: 0.02cm;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .sname {
+        font-size: 20px;
+        line-height: 0.73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: calc(100% - .7cm);
+    }
+
+    .contactRight {
+        width: calc(100% - .7cm);
+    }
+
+    .head-sub {
+        font-size: 18px;
+    }
+
+    .contactMed {
+        width: 100%;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: 0.9cm;
+    }
+
+    .contactMeds {
+        justify-content: flex-start;
+    }
+
+    .contactInp,
+    .contactText {
+        font-size: 15px;
+    }
+}

@@ -1,4 +1,4 @@
-#Tushar Singh
+### Tushar Singh
 
 *Currently working on:* Developing projects at Lovely Professional University  
 *Learning:* Enhancing my skills in Python, Java, JavaScript, CSS, and HTML  

@@ -1,10 +1,10 @@
 #Tushar Singh
 
-🚀 *Currently working on:* Developing projects at Lovely Professional University  
-🤓 *Learning:* Enhancing my skills in Python, Java, JavaScript, CSS, and HTML  
-🤝 *Open to collaborate on:* Any projects that involve coding, especially in Python, Java, JavaScript, CSS, and HTML  
-🤔 *Ask me about:* Programming, web development, and anything tech-related!  
-😄 *Fun fact:* I'm a coding enthusiast who loves to learn and work on diverse projects!  
+*Currently working on:* Developing projects at Lovely Professional University  
+*Learning:* Enhancing my skills in Python, Java, JavaScript, CSS, and HTML  
+*Open to collaborate on:* Any projects that involve coding, especially in Python, Java, JavaScript, CSS, and HTML  
+*Ask me about:* Programming, web development, and anything tech-related!  
+*Fun fact:* I'm a coding enthusiast who loves to learn and work on diverse projects!  
 
 ---
 
@@ -32,4 +32,4 @@
 
 ---
 
-🌟 *Come create amazing things together!
+🌟 *Come create amazing things together!*
